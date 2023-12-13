@@ -1,0 +1,175 @@
+/* -----------------------------------------
+MEYERWEB RESET
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------- END OF MEYERWEB RESET------------- */
+/* -------------START OF GENERAL STYLES------------ */
+
+:root{
+    --Frame-border: solid 2px rgba(0, 255, 255, 0.65);
+    --Frame-box-shadow: 0 0 7.5px 4px royalblue;  
+    --Blue: radial-gradient(
+        rgb(4, 9, 40),
+        rgb(8, 18, 80),
+        rgb(8, 18, 80),
+    );
+    --form-width: calc(100vw - 20vw); 
+    --form-width2: clamp(90vw, 80vw, 60rem) /*smallest, ideal, largest */
+}
+
+@font-face{
+    font-family: Norse-Bold;
+    src: url("Norse-Bold.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+/* ------------- END OF GENERAL STYLES------------- */
+/* ------------START OF BODY ITEM STYLES----------- */
+
+.headerTop-news-div{
+
+}
+
+header{
+    border: var(--Frame-border);
+    box-shadow: var(--Frame-box-shadow);
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    display: inline;
+}
+
+.header-right{
+    display: flex;
+}
+
+
+/* ---------------Style the submit button --------------- */
+button {
+    font-weight: bold;
+    padding: 8px 20px;
+    margin-left: 15px;
+    border: solid 2px rgb(47, 217, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: black;
+    background-image: linear-gradient(
+        -10deg,
+        rgba(0, 255, 255, 0.2),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.2)
+    ); 
+    color: rgb(47, 217, 255);
+}
+
+button:hover{
+    border: solid 2px rgb(61, 255, 47);
+    background-image: linear-gradient(
+        10deg,
+        rgba(0, 255, 255, 0.2),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.2)
+    ); 
+    color: rgb(61, 255, 47);
+    box-shadow: 0 0 3px, 0 0 5px royalblue inset;
+    transition: box-shadow 0.15s;
+    scale: 1.02;
+}
+
+button:active{
+    background-image: linear-gradient(
+        -10deg,
+        rgba(0, 255, 255, 0.25),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.4),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.25)
+    ); 
+    box-shadow: 0 0 5px, 0 0 7px royalblue inset;
+    transition: box-shadow 0.05s;
+    scale: 0.98;
+    color: rgb(51, 245, 37);
+    border: solid 2px rgb(61, 255, 47);
+}
+
+/* ---------------Style the footer--------------- */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    
+}
