@@ -61,7 +61,15 @@ table {
         rgb(8, 18, 80),
     );
     --form-width: calc(100vw - 20vw); 
-    --form-width2: clamp(90vw, 80vw, 60rem) /*smallest, ideal, largest */
+    --form-width2: clamp(90vw, 80vw, 60rem); /*smallest, ideal, largest */
+    --boardBlue: radial-gradient(
+        rgb(4, 9, 40),
+        rgb(8, 18, 80),
+        rgb(8, 18, 80),
+        rgb(16, 36, 120),
+        rgb(16, 36, 120),
+        rgb(16, 36, 240)
+    );
 }
 
 @font-face{
@@ -81,18 +89,139 @@ body{
     background-color: black;
 }
 /* ------------- END OF GENERAL STYLES------------- */
-/* ------------START OF BODY ITEM STYLES----------- */
+/* ------------START OF NEWS ITEM STYLES----------- */
 
-.headerTop-news-div{
-
-}
-
-header{
-    border: var(--Frame-border);
-    box-shadow: var(--Frame-box-shadow);
+.news-div{
+    font-size: 1rem;
+    padding: 2px;
+    color: blue;
+    background-color: cyan;
     display: flex;
     justify-content: space-between;
 }
+  
+.news-div div {
+    padding: 8px 5px;
+}
+
+.news-div a{
+    color: blue;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.donate a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.donate:hover{
+    background-color: greenyellow;
+}
+
+/* ------------- END OF NEWS STYLES------------------ */
+/* ------------START OF HEADER ITEM STYLES----------- */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+    background-image: var(--boardBlue);
+}
+
+.header-left{
+    width: 19%
+}
+
+.header-center{
+    font-size: 1.1rem;
+    width: 62%;
+    display: flex;
+    justify-content: center;
+}
+
+    .header-center div{
+        margin: 0;
+        padding: 15px 30px 10px 30px;
+    }
+
+    .header-center div a{
+        text-decoration: none;
+    }
+
+    .header-center div:nth-child(1){
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent; 
+        border-bottom: 5px solid cyan;
+    }
+
+    .demo{
+        font-size: 1.4rem;
+        font-weight: bold;
+        border: solid 2px royalblue ;
+        border-bottom: transparent;
+        border-top: transparent;
+        background-color: black;
+        border-top-right-radius: 40%;
+        border-top-left-radius: 40%;
+    }
+
+    .demo a{
+        color: rgb(61, 255, 47);
+        font-style: 'Norse-Bold';
+    }
+
+.header-right{
+    width: 19%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+    .theme-btns{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .dark-light, .language{
+        padding: 0 5px;
+    }
+
+    .sign-in-btn{
+
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .sign-in-btn:hover{
+        color: rgb(61, 255, 47);
+        box-shadow: 0 0 3px, 0 0 5px royalblue inset;
+        transition: box-shadow 0.15s;
+        scale: 1.02;
+    }
+
+    .sign-in-btn:active{
+        background-image: linear-gradient(
+            -10deg,
+            rgba(0, 255, 255, 0.25),
+            rgba(0, 255, 255, 0.35),
+            rgba(0, 255, 255, 0.4),
+            rgba(0, 255, 255, 0.35),
+            rgba(0, 255, 255, 0.25)
+        ); 
+        box-shadow: 0 0 5px, 0 0 7px royalblue inset;
+        transition: box-shadow 0.05s;
+        scale: 0.98;
+        color: rgb(51, 245, 37);
+    }
+
+/* ------------- END OF HEADER STYLES-------------- */
+/* ------------START OF MAIN ITEM STYLES----------- */
 
 main{
     background-size: cover;
@@ -104,13 +233,6 @@ main{
     justify-content: center;
 }
 
-li{
-    display: inline;
-}
-
-.header-right{
-    display: flex;
-}
 
 
 /* ---------------Style the submit button --------------- */
