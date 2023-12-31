@@ -63,12 +63,12 @@ table {
     --form-width: calc(100vw - 20vw); 
     --form-width2: clamp(90vw, 80vw, 60rem); /*smallest, ideal, largest */
     --boardBlue: radial-gradient(
-        rgb(4, 9, 40),
-        rgb(8, 18, 80),
-        rgb(8, 18, 80),
-        rgb(16, 36, 120),
-        rgb(16, 36, 120),
-        rgb(16, 36, 240)
+        rgba(4, 9, 40, 0.90),
+        rgba(8, 18, 80, 0.90),
+        rgba(8, 18, 80, 0.90),
+        rgba(16, 36, 120, 0.90),
+        rgba(16, 36, 120, 0.90),
+        rgba(16, 36, 240, 0.90)
     );
 }
 
@@ -85,33 +85,34 @@ table {
 }
 
 body{
-    color: white;
-    background-color: black;
+    background: url("backgroundImg.jpg") right/cover no-repeat fixed;
 }
+
 /* ------------- END OF GENERAL STYLES------------- */
 /* ------------START OF NEWS ITEM STYLES----------- */
 
 .news-div{
     font-size: 1rem;
     padding: 2px;
-    color: blue;
-    background-color: cyan;
+    color: white;
+    background-color: royalblue;
     display: flex;
     justify-content: space-between;
 }
   
 .news-div div {
-    padding: 8px 5px;
+    padding: 5px;
 }
 
 .news-div a{
-    color: blue;
+    color: white;
     text-decoration: none;
     font-style: italic;
 }
 
 .donate a{
-    color: black;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px black, 0 0 20px goldenrod;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
@@ -133,8 +134,24 @@ body{
     background-image: var(--boardBlue);
 }
 
+a {
+    color: white
+}
+
 .header-left{
     width: 19%
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Norse-Bold';
+    padding: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 1px cyan, 0 0 22px royalblue;
+
 }
 
 .header-center{
