@@ -85,7 +85,7 @@ table {
 }
 
 body{
-    background: url("backgroundImg.jpg") right/cover no-repeat fixed;
+    background: url("bg003.png") center/cover no-repeat fixed;
 }
 
 /* ------------- END OF GENERAL STYLES------------- */
@@ -240,14 +240,8 @@ a {
 /* ------------- END OF HEADER STYLES-------------- */
 /* ------------START OF MAIN ITEM STYLES----------- */
 
-main{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.intro-page{
+    height: 100vh;
 }
 
 
