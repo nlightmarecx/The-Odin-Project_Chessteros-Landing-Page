@@ -6,5 +6,50 @@
 } */
 
 
+.motto{
+    font-family: 'Norse-Bold';
+    padding: 10px 5px;
+    margin: 10px auto;
+    text-align: center;
+}
 
+.title span{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.motto h1 span{
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.8rem;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 4px 8px 10px royalblue;
+    padding: 13px 5px;
+}
+
+.motto h3 span{
+    color: rgba(61, 255, 255, 0.99);
+    font-size: 1.4rem;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 4px 8px 10px royalblue;
+    padding: 15px 125px;
+}
+
+.motto h2 span{
+    color: rgba(61, 255, 47, 0.99);
+    font-size: 1.6rem;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 4px 8px 10px royalblue;
+    padding: 12px 225px;
+}
+
+/* ------------- END OF HEADER STYLES-------------- */
+/* ------------START OF MAIN ITEM STYLES----------- */
+
+.home-intro{
+    height: 60vh;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-intro h1{
+    color: aqua;
+
+}
 
