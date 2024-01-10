@@ -82,6 +82,11 @@ table {
     src: url("Norse-Bold.otf");
 }
 
+@font-face{
+    font-family: Gilroy-ExtraBold;
+    src: url("Gilroy-ExtraBold.ttf");
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
@@ -156,7 +161,6 @@ a {
     cursor: pointer;
     color: white;
     text-shadow: 0 0 1px cyan, 0 0 22px royalblue;
-
 }
 
 .header-center{
